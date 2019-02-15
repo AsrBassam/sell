@@ -366,7 +366,7 @@ client.on('message', message => {
       message.channel.send(`**✅   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/dream");
+    client.user.setGame(argresult, "https://www.twitch.tv/oxygen");
       message.channel.send(`**✅**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
@@ -405,11 +405,11 @@ if (message.content.startsWith(adminprefix + 'setava')) {
 
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`Desert Bot- Script By : EX Clan`);
+      console.log(`Desert Bot- Script By : Oscar`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Oscar ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
